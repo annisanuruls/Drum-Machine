@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
+  background-color: #171717;
+  height: 97vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #393939;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.pad-wrapper{
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 325px;
+}
+
+.drum-pad{
+  background-image: radial-gradient(circle, #bcc3cc, #97a0aa);
+  border: 0;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  margin: 4px 4px;
+  font-family: 'raleway', arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.drum-pad-active{
+  background-image: radial-gradient(circle, #1ea9e3,#1790c3);
+  box-shadow: 0 0 5px 5px #1ea9e3;
+}
+
+.drumpad-display{
+  background-color: #171717;
+  color: #1badea;
+}
+
+.setting-wrapper{
+  font-family: 'josefin sans', arial, sans-serif;
+}
+
+.project-title{
+  color: white;
+  text-align: center;
+  margin-top: 0;
+}
+
+.bank-wrapper{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.bank-button{
+  background-color: #171717;
   color: white;
+  border: 0;
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 10px;
+  font-family:'josefin sans', Arial, sans-serif;
+  margin-right: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.bank-display{
+  background-color: #171717;
+  color: #1badea;
+  font-size: 25px;
+  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p{
+  color: white;
+  margin-bottom: 0;
+}
+
+.drumpad-display{
+  width: 100%;
+  height: 50px;
+  background-color: #171717;
+  text-align: center;
+  line-height: 50px;
+  color: #1badea;
+  border-radius: 10px;
+  margin-top: 0;
+}
+
+.volume-setting{
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.volume-setting::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: 20px;
+  height: 35px;
+  background-color: #1badea;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid #115f81;
+}
+
+.volume-display{
+  color: white;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-size: 30px;
 }

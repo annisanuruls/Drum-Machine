@@ -1,0 +1,62 @@
+@media screen and (max-width: 600px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container{
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .drum-pad{
+        width: 104px;
+        height: 104px;
+        margin: 2px;
+    }
+
+    .setting-wrapper{
+        padding: 10px 10px 50px;
+    }
+
+    .project-title{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .bank-wrapper{
+        margin-bottom: 20px;
+    }
+
+    .bank-button{
+        font-size: 15px;
+        width: 70px;
+        height: 40px;
+    }
+    .bank-display{
+        font-size: 15px;
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .drumpad-display{
+        height: 40px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .container{
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .drum-pad{
+        width: 89px;
+        height: 89px;
+        margin: 2px;
+    }
+}
